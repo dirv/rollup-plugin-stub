@@ -1,13 +1,11 @@
-import babel from 'rollup-plugin-babel';
-
 let pkg = require('./package.json');
 
 export default {
-  entry: 'index.js',
+  input: 'index.js',
   external: Object.keys(pkg.dependencies),
-  plugins: [babel()],
-  targets: [
-    { dest: pkg.module, format: 'es' },
-    { dest: pkg.main, format: 'cjs' }
+  plugins: [],
+  output: [
+    { file: pkg.module, format: 'es' },
+    { file: pkg.main, format: 'cjs' }
   ]
 };

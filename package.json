@@ -23,15 +23,12 @@
     "dist/"
   ],
   "devDependencies": {
-    "babel-plugin-transform-es2015-parameters": "^6.18.0",
-    "babel-preset-es2015-rollup": "^1.2.0",
     "mocha": "^3.2.0",
-    "rollup": "^0.36.4",
-    "rollup-plugin-babel": "^2.6.1",
+    "rollup": "^1.27.14",
     "semantic-release": "^6.3.2"
   },
   "dependencies": {
-    "acorn": "^4.0.3",
+    "acorn": "^7.1.0",
     "magic-string": "^0.17.0",
     "rollup-pluginutils": "^1.5.2"
   },

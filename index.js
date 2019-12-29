@@ -13,7 +13,7 @@ export default function stub(options={}) {
 
       try {
         ast = parse(code, {
-          ecmaVersion: 6,
+          ecmaVersion: 10,
           sourceType: 'module'
         });
       } catch ( err ) {
