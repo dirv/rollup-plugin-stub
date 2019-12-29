@@ -61,7 +61,11 @@ export default function stub(options={}) {
       });
 
       code = magicString.toString();
-      const map = sourceMap ? magicString.generateMap() : null;
+      const map = sourceMap ? magicString.generateMap({
+        source: id,
+        includeContent: true,
+        hires: true
+      }) : null;
 
       return { code, map };
     }
